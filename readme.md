@@ -19,6 +19,7 @@
 3. cp .env.example .env
 4. sudo chmod -R 775 storage/ for Ubuntu/Mac OS users
 5. sudo chmod -R 775 public/storage/ for Ubuntu/Mac OS users
+6. php artisan key:generate
 
 - Setup database with name of you choice and include it in the .env file together with you db credentials.
 - Run command: php artisan migrate. This will migrate the tables to the database created.
