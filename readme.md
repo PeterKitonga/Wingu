@@ -7,6 +7,23 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Requirements
+- You will need to have PHP installed first before doing anything else
+- Install composer from https://getcomposer.org/doc/00-intro.md.
+- Install laravel installer from https://laravel.com/docs/5.3
+
+## Setting up
+- After cloning project run commands on terminal:
+1. cd /path/project/folder
+2. composer install
+3. cp .env.example .env
+4. sudo chmod -R 775 storage/ for Ubuntu/Mac OS users
+5. sudo chmod -R 775 public/storage/ for Ubuntu/Mac OS users
+
+- Setup database with name of you choice and include it in the .env file together with you db credentials.
+- Run command: php artisan migrate. This will migrate the tables to the database created.
+- Run command php artisan serve. Access http://localhost:8000/ to view project
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
